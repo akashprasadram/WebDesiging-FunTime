@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav  class="zone yellow stiky">
+			<ul class="main-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="feedback.html">Feedback</a></li>
+				<li class="make">Register</li>
+				<li><a href="login.html">Subscribe</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1>Register</h1>
+	<selector>
+		<form method="GET">
+		First Name: <input type="text" name="firstname"><br><br>
+		Last Name: <input type="text" name="lasttname"><br><br>
+		Email: <input type="email" name="email"><br><br>
+		<!-- Updated min to minlength (min is used only for range inputs. Visit here for more info: https://www.w3schools.com/tags/att_input_maxlength.asp) -->
+		Password: <input type="password" name="password" minLength="5"><br><br>
+		Birthday: <input type="date" name="birthday"><br><br>
+		Gender:<br>
+		<input type="radio" name="gender" value="Male">Male<br>
+		<input type="radio" name="gender" value="Female">Female<br>
+		<input type="radio" name="gender" value="Other">Other<br><br>
+		profession: <br>
+		<!-- ******
+			See if you can play around with the below checkboxes and add the "value" attribute. How will this change the query string when you click "Register"?
+		***** -->
+		<input type="radio" name="profession" value="us">student<br>
+		<input type="radio" name="profession" value="ps">Not a Student<br><br>
+		<!--Cars: <br>
+		<select name="cars">
+			<option value="volvo" >Volvo</option>
+			<option value="audi">Audi</option>
+		</select><br>-->
+		<input type="submit" value="Register" formaction="thanku.html">
+		<input type="reset">
+	</form>
+
+	</selector>
+</body>
+</html>
